@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_last_digit - prints the last digit of s numper.
+ * @print_last_digit: prints the last digit of s numper.
  * @n: The numper in question.
  * return: value of the last digit.
  */
