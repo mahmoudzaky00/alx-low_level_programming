@@ -2,9 +2,7 @@
 
 /**
  * rev_string - reverses a string
- *
  * @s: string parameter input
- *
  * Return: Nothing
  */
 
@@ -15,7 +13,7 @@ void rev_string(char *s)
 
 	/*find string length without null char*/
 	for (1 = 0; s[1] != '\0' ++1)
-		;
+	;
 
 	/*swap the string by looping to half the string*/
 	for (i = 0; i < 1 / 2; i++)
