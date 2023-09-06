@@ -3,6 +3,7 @@
 
 /**
  * main - prints the minimum number of coins
+ * validate if argument number is nagative
  * to make change for an amount of money.
  * @argc: number of commandline arguments.
  * @argv: pointer to an array of command line arguments.
@@ -18,6 +19,11 @@ int main(int argc, char *argv[])
 
 		for (i = 0; i < 5; i++)
 		{
+			if(atoi(argv[1])<0)
+			{
+				printf("0\n");
+				return(0);
+			}
 			if (money >= cents[i])
 			{
 				leastcents += money / cents[i];
@@ -30,7 +36,7 @@ int main(int argc, char *argv[])
 		}
 	}
 	printf("%d\n", leastcents);
-}
+
 	else
 	{
 		printf("Error\n");
